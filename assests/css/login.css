@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 40px 100px;
+  z-index: 1;
+}
+header .login-h-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .login-h-right p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+}
+header .login-h-right a {
+  margin-left: 40px;
+  text-decoration: none;
+  background-color: #ff497c;
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 16px 38px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+#register-area {
+  overflow-x: hidden;
+}
+#register-area .register-content {
+  background-image: url("https://new.axilthemes.com/demo/template/etrade/assets/images/bg/bg-image-9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  padding: 200px 50px 0 100px;
+}
+#register-area .register-content h3 {
+  font-size: 28px;
+  font-weight: 500;
+}
+#register-area .register-main {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  overflow: auto;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  max-width: 450px;
+  width: 100%;
+  padding: 30px;
+}
+#register-area .register-main span {
+  color: #999fae;
+  font-size: 14px;
+}
+#register-area .register-main h3 {
+  margin-bottom: 16px;
+  font-size: 28px;
+  font-weight: 700;
+}
+#register-area .register-main form {
+  margin-top: 55px;
+}
+#register-area .register-main form .first-inp {
+  margin-bottom: 35px;
+  position: relative;
+}
+#register-area .register-main form .first-inp label {
+  position: absolute;
+  top: -11px;
+  left: 20px;
+  pointer-events: none;
+  z-index: 4;
+  background: #fff;
+  padding: 0 10px;
+}
+#register-area .register-main form .first-inp input {
+  width: 390px;
+  height: 60px;
+  padding: 0 30px;
+  color: #777777;
+  border: 1px solid #999fae;
+  outline: none;
+  transition: 0.5s;
+  border-radius: 6px;
+}
+#register-area .register-main form .first-inp input:focus {
+  border-color: #3577f0;
+}
+#register-area .register-main form .sec-inp {
+  margin-bottom: 35px;
+  position: relative;
+}
+#register-area .register-main form .sec-inp label {
+  position: absolute;
+  top: -11px;
+  left: 20px;
+  pointer-events: none;
+  z-index: 4;
+  background: #fff;
+  padding: 0 10px;
+}
+#register-area .register-main form .sec-inp input {
+  width: 390px;
+  height: 60px;
+  padding: 0 30px;
+  color: #777777;
+  border: 1px solid #999fae;
+  outline: none;
+  transition: 0.5s;
+  border-radius: 6px;
+}
+#register-area .register-main form .sec-inp input:focus {
+  border-color: #3577f0;
+}
+#register-area .register-main .btns-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#register-area .register-main .btns-area button {
+  width: auto;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 16px 38px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+  background-color: #3577f0;
+  color: white;
+  border: none;
+}
+#register-area .register-main .btns-area button:hover {
+  transform: scale(1.05);
+}
+#register-area .register-main .btns-area a {
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .register-content {
+    display: none !important;
+  }
+  header {
+    position: unset;
+  }
+  header .login-h-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .login-h-left img {
+    margin-bottom: 40px !important;
+  }
+  header .login-h-right {
+    flex-direction: column !important;
+  }
+  header .login-h-right a {
+    margin-top: 10px !important;
+    margin-left: 0 !important;
+    padding: 12px 25px !important;
+    font-size: 14px !important;
+  }
+  .register-main {
+    position: unset !important;
+    top: 25%;
+    left: 50%;
+  }
+  .register-main .sec-inp input, .register-main .first-inp input {
+    width: 330px !important;
+  }
+  .register-main .reg-texts {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}/*# sourceMappingURL=login.css.map */
